@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html> 
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <script type="text/javascript" src="script.js"></script>
+  <div id = "chart"></div>
+  <div id = "ken" data-day="-1">
+    <div class="line">
+      <div id = "money-bar">100000.00 USD</div>
+      <div id="myProgress">
+        <div id="myBar">0%</div>
+      </div>
+  </div>
+  <div id="button">
+    <div id="researchbutton">
+      <b>research!</b></div>
+    <div id="upgradebutton" onclick="openupgrade()">
+      <b>upgrade</b></div>
+    <div id="marketbutton" onclick="openmarket()">
+      <b>market</b></div>
+  </div>
+  <img id="rep" src="https://cdn.discordapp.com/attachments/880831085431390301/971459733288542278/279199654_401025438303422_1723373248062906846_n-removebg-preview.png" onclick="showbutton()">
+  <img id="status" src="https://cdn.discordapp.com/attachments/880831085431390301/960219847768297482/check.png" onclick="ken.dataset.day *=-1">
+  <div class="box">ken muraki</div>
+    <div class="time-left"><b>time left:</b>
+      <div class= "time">
+        <h2 id="week">8 weeks</h2>
+        <!--<button onclick="start()">start</button>-->
+
+      </div>
+    </div>
+  </div>
+</div>
+  <img id="build1" src="https://media.discordapp.net/attachments/874227254757031956/971369202881544202/build1-removebg-preview.png" alt="">
+  <img id="build2" src="https://cdn.discordapp.com/attachments/874227254757031956/971373534788071444/build3.png" alt="">
+  <img id="build3" src="https://cdn.discordapp.com/attachments/874227254757031956/971366429691625472/build5.png" alt="">
+  <img id="build4" src="https://cdn.discordapp.com/attachments/874227254757031956/971366513653219368/build4-removebg-preview.png" alt="">
+  <img id="build5" src="https://cdn.discordapp.com/attachments/874227254757031956/971366514219417640/build2-removebg-preview.png" alt="">
+  <img id="spacex" src="https://cdn.discordapp.com/attachments/956179267308371978/961567061119742012/lvl1_starship.png" style="width:330px;, height:330px;">
+  <div id="market">
+    <span class="close" onclick="closemarket()">&times;</span>
+    <div class="mar-page">
+      <div class="card m1" onclick="buy(mm1), show()"> <img src="https://cdn.discordapp.com/attachments/956179267308371978/961567061119742012/lvl1_starship.png" style="width:100px;, height:100px;"></div>
+      <div class="card m2" onclick="buy(mm2)"> <img src="https://cdn.discordapp.com/attachments/956179267308371978/968187698374402128/fuel1.png" style="width:100px;, height:100px;" style="width:100px;, height:100px;"></div>
+      <div class="card m3" onclick="buy(mm3)"> <img src="https://cdn.discordapp.com/attachments/956179267308371978/967810472369848360/unknown.png" style="width:100px;, height:100px;"></div>
+    </div>
+  </div>
+  <div id="upgrade">
+    <span class="close" onclick= "closeupgrade()">&times;</span>
+    <div class="up-page">
+      <div class="card p1"> <img src="https://cdn.discordapp.com/attachments/956179267308371978/967810472369848360/unknown.png" style="width:100px;, height:100px;"></div>
+      <div class="card p2"> <img src="https://cdn.discordapp.com/attachments/956179267308371978/967810919340052530/unknown.png" style="width:100px;, height:100px;"></div>
+      <div class="card p3"> <img src="https://cdn.discordapp.com/attachments/956179267308371978/967810700804227172/unknown.png" style="width:100px;, height:100px;"></div>
+      <div class="card p4"> <img src="https://cdn.discordapp.com/attachments/956179267308371978/967810745951727696/unknown.png" style="width:100px;, height:100px;"></div>
+      <div class="card p5"> <img src="https://cdn.discordapp.com/attachments/956179267308371978/968187698374402128/fuel1.png" style="width:100px;, height:100px;"></div>
+      <div class="card p6"> <img src="https://cdn.discordapp.com/attachments/956179267308371978/968187698647023677/fuel2.png" style="width:100px;, height:100px;"></div>
+      <div class="card p7"> <img src="https://cdn.discordapp.com/attachments/956179267308371978/968187698982584360/fuel3.png" style="width:100px;, height:100px;"></div>
+      <div class="card p8"> <img src="https://cdn.discordapp.com/attachments/956179267308371978/968187810739810314/unknown.png" style="width:100px;, height:100px;"></div>
+      <div class="card p9"> <img src="https://cdn.discordapp.com/attachments/956179267308371978/961567061119742012/lvl1_starship.png" style="width:100px;, height:100px;"></div>
+      <div class="card p10"> <img src="https://cdn.discordapp.com/attachments/956179267308371978/961567061497233418/lvl2_starship.png" style="width:100px;, height:100px;"></div>
+      <div class="card p11"> <img src="https://cdn.discordapp.com/attachments/956179267308371978/961567061761478656/lvl3_starship.png" style="width:100px;, height:100px;"></div>
+      <div class="card p12"> <img src="https://cdn.discordapp.com/attachments/956179267308371978/961567062017335336/lvl4_starship.png" style="width:100px;, height:100px;"></div>
+    </div>
+  </div>
+</body>
+</html>

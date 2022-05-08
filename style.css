@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+body{
+  background: -webkit-gradient(linear, left top, left bottom, from(purple), to(orange)) fixed;
+  font-family: 'Press Start 2P', cursive;
+  margin:auto;
+}
+#ken{
+  margin:10px;
+}
+#upgradebutton{
+  position:fixed;
+  bottom:28%;
+  left:2em;
+  background:#C4C4C4;
+  padding:1em;
+  border-radius:4px;
+  cursor:pointer;
+  color:#666666;
+  text-transform:uppercase;
+  font-size:20px;
+  transition:transform .3s;
+}
+#rep{
+  position:fixed;
+  bottom:4%;
+  left:2.5em;
+  background:#C4C4C4;
+  padding:1em;
+  border-radius:4px;
+  cursor:pointer;
+  color:#666666;
+  text-transform:uppercase;
+  width: 20px;
+  height: 20px;
+  transition:transform .3s;
+}
+#researchbutton{
+  position:fixed;
+  bottom:40%;
+  left:2em;
+  background:#C4C4C4;
+  padding:1em;
+  border-radius:4px;
+  cursor:pointer;
+  color:#666666;
+  text-transform:uppercase;
+  font-size:20px;
+  transition:transform .3s;
+}
+#marketbutton{
+  position:fixed;
+  bottom:16%;
+  left:2em;
+  background:#C4C4C4;
+  padding:1em;
+  border-radius:4px;
+  cursor:pointer;
+  color:#666666;
+  text-transform:uppercase;
+  font-size:20px;
+  transition:transform .3s;
+}
+#button{
+  display: none;
+}
+#rep:hover,#marketbutton:hover,#researchbutton:hover,#upgradebutton:hover{
+  transform:scale(1.2);
+}
+#myProgress {
+  margin-top:20px;
+  width: 20%;
+  background-color: #ddd;
+  text-align: center;
+}
+#myBar {
+  width: 0%;
+  height: 30px;
+  background-color: #04AA6D;
+  line-height: 30px;
+  color: white;
+}
+#chart{
+  position:fixed;
+  height: 200px;
+  width:500px;
+  bottom:60%;
+  background-color: #D0CBC5;
+  border-right:15px solid 	#dddddd;
+  transform:translatex(-490px);
+}
+#chart:hover{
+  transform:translatex(-100px);
+  transition:transform .8s;
+}
+
+#money-bar{
+  position:fixed;
+  width:20%;
+  top:0;
+  right:0;
+  background-color: #B6A5B7;
+  border-bottom-left-radius: 15px;
+  text-align:center;
+  padding:20px;
+  font-size:20px;
+}
+.line{
+  display:flex;
+}
+#status{
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  right:2%;
+  bottom:4%;
+  border-radius:50%;
+  cursor:pointer;
+  z-index: 1;
+  transition: transform .3s;
+  background: #DDD4FA;
+}
+.box{
+  transform:translateY(20deg);
+  position: fixed;
+  right:2%;
+  bottom:4%;
+  background-color:#D0CBC5;
+  width: 18%;
+  height: 42%;
+  transition:all .2s;
+  border-radius: 25px;
+  visibility: visible;;
+  overflow: hidden;
+  padding:20px 5%;
+  font-size: 15px;
+}
+#status:hover{
+  transform:scale(1.1);
+}
+#ken[data-day="-1"] .box{
+  transform:translateY(0);
+  width: 50px;
+  height: 50px;
+  visibility: hidden;
+}
+.time-left{
+  transform:translateY(20deg);
+  position: fixed;
+  right:0;
+  background-color:#D0CBC5;
+  margin-top:5%;
+  width: 15%;
+  height: 170px;
+  transition:all .2s;
+  visibility: visible;;
+  overflow: hidden;
+  padding:10px;
+  font-size: 20px;
+  z-index:-1000;
+}
+.time{
+  text-align:center;
+  color:red;
+}
+@media (max-width:1100px) {
+  #researchbutton, #upgradebutton, #marketbutton{
+    font-size:15px;
+  }
+  #chart, .tabb{
+    height:70px;
+  }
+  #money-bar{
+    font-size:14px;
+  }
+  #build1,#build2,#build4,#build3,#build5{
+    display:none;
+  }
+}
+#build1{
+  position:absolute;
+  bottom: 0px;
+  left:17%;
+  z-index:-1;
+}
+
+#build2{
+  position:absolute;
+  bottom: 0px;
+  left:20%;
+  z-index:-2;
+}
+
+#build3{
+  position:absolute;
+  bottom: 0px;
+  left:41%;
+  z-index:-1;
+}
+
+#build4{
+  position:absolute;
+  bottom: 0px;
+  left:60%;
+  z-index:-2;
+}
+
+#build5{
+  position:absolute;
+  bottom: 0px;
+  left:80%;
+  z-index:-2;
+}
+#spacex{
+  position:absolute;
+  bottom: 0px;
+  bottom:8%;
+  left:40.5%;
+  z-index:-1;
+  display:none;
+}
+.mar-page{
+  width: 70%;
+  height: 50%;
+  padding:20px 0 20px 5%;
+  position: fixed;
+  left:15%;
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 200px;
+  overflow:scroll;
+}
+.card{
+  background:gray;
+  width: 70%;
+  height:90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition:transform .3s;
+}
+
+.card:hover{
+  transform:translateY(-10px);
+}
+.close{
+  font-size: 35px;
+  padding-left: 90%;
+  opacity: 0.4;
+}
+.close:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+#market{
+  width: 70%;
+  height: 65%;
+  padding:20px 0 20px 5%;
+  position: fixed;
+  left:15%;
+  background: white;
+  overflow: hidden;
+  display: none;
+}
+
+#upgrade{
+  width: 70%;
+  height: 65%;
+  padding:20px 0 20px 5%;
+  position: fixed;
+  left:15%;
+  background: white;
+  overflow: hidden;
+  display: none;
+}
+
+.up-page{
+  width: 70%;
+  height: 50%;
+  padding:20px 0 20px 5%;
+  position: fixed;
+  left:15%;
+  display:grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 200px;
+  overflow:scroll;
+}
+.p1,.p2,.p3,.p4,.p5,.p6,.p7,.p8,.p9,.p10,.p11,.p12{
+  opacity: 0.7;
+  cursor: pointer;
+}
+.m1,.m2,.m3{
+  opacity: 1;
+  cursor: pointer;
+  text-align:center;
+}
