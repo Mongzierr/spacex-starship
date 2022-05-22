@@ -1,5 +1,5 @@
 var number = 0;
-var money = 100000;
+var money = 500;
 var percent = 10;
 var mm1 = 1;
 var mm2 = 2;
@@ -153,8 +153,8 @@ function buy(piece){
   var inside = document.querySelector(".p5");
   var ipon = document.querySelector(".p9");
   if (piece == 1){
-    money-=2500;
-    x.innerHTML = parseFloat(money).toFixed( 2 )+" USD";
+    money-=100;
+    x.innerHTML = parseFloat(money).toFixed( 2 )+" SPACE";
     y.style.opacity=0.7;
     y.innerHTML = "Sold Out.";
     y.style.cursor = "auto";
@@ -163,8 +163,8 @@ function buy(piece){
     
   }
   if (piece == 2){
-    money-=2500;
-    x.innerHTML = parseFloat(money).toFixed( 2 )+" USD"
+    money-=100;
+    x.innerHTML = parseFloat(money).toFixed( 2 )+" SPACE"
     z.style.opacity=0.7;
     z.innerHTML = "Sold Out.";
     z.style.cursor = "auto";
@@ -175,8 +175,8 @@ function buy(piece){
   }
   
   if (piece == 3){
-    money-=2500;
-    x.innerHTML = parseFloat(money).toFixed( 2 )+" USD"
+    money-=100;
+    x.innerHTML = parseFloat(money).toFixed( 2 )+" SPACE"
     j.style.opacity=0.7;
     j.innerHTML = "Sold Out.";
     j.style.cursor = "auto";
@@ -187,8 +187,8 @@ function buy(piece){
   }
 
   if (piece == 4){
-    money-=2500;
-    x.innerHTML = parseFloat(money).toFixed( 2 )+" USD"
+    money-=100;
+    x.innerHTML = parseFloat(money).toFixed( 2 )+" SPACE"
     k.style.opacity=0.7;
     k.innerHTML = "Sold Out.";
     k.style.cursor = "auto";
@@ -204,9 +204,9 @@ function buy(piece){
 function upgradev2(){
   var x = document.getElementById("money-bar");
   var payloadv2 = document.querySelector(".p2");
-  if (up1 == 1 && money -2500 >=0){
-    money-=2500;
-    x.innerHTML = parseFloat(money).toFixed( 2 )+" USD";
+  if (up1 == 1 && money -100 >=0){
+    money-=100;
+    x.innerHTML = parseFloat(money).toFixed( 2 )+" SPACE";
     move(1);
     payloadv2.innerHTML = "Upgrade Success.";
     payloadv2.style.opacity = 1;
@@ -217,9 +217,9 @@ function upgradev2(){
 function upgradev3(){
   var x = document.getElementById("money-bar");
   var payloadv3 = document.querySelector(".p3");
-  if(up2 == 1 && money -2500 >=0){
-    money-=2500;
-    x.innerHTML = parseFloat(money).toFixed( 2 )+" USD";
+  if(up2 == 1 && money -100 >=0){
+    money-=100;
+    x.innerHTML = parseFloat(money).toFixed( 2 )+" SPACE";
     move(1);
     payloadv3.innerHTML = "Upgrade Success.";
     payloadv3.style.opacity = 1;
@@ -230,9 +230,9 @@ function upgradev3(){
 function upgradev4(){
   var x = document.getElementById("money-bar");
   var payloadv4 = document.querySelector(".p4");
-  if(up3 == 1 && money -2500 >=0){
-    money-=2500;
-    x.innerHTML = parseFloat(money).toFixed( 2 )+" USD";
+  if(up3 == 1 && money -100 >=0){
+    money-=100;
+    x.innerHTML = parseFloat(money).toFixed( 2 )+" SPACE";
     move(1);
     payloadv4.innerHTML = "Upgrade Success.";
     payloadv4.style.opacity = 1;
@@ -244,9 +244,9 @@ function upgradev4(){
 function upgradev6(){
   var x = document.getElementById("money-bar");
   var payloadv6 = document.querySelector(".p6");
-  if (up6 == 1 && money -2500 >=0){
-    money-=2500;
-    x.innerHTML = parseFloat(money).toFixed( 2 )+" USD";
+  if (up6 == 1 && money -100 >=0){
+    money-=100;
+    x.innerHTML = parseFloat(money).toFixed( 2 )+" SPACE";
     move(1);
     payloadv6.innerHTML = "Upgrade Success.";
     payloadv6.style.opacity = 1;
@@ -258,9 +258,9 @@ function upgradev6(){
 function upgradev7(){
   var x = document.getElementById("money-bar");
   var payloadv7 = document.querySelector(".p7");
-  if (up7 == 1 && money -2500 >=0){
-    money-=2500;
-    x.innerHTML = parseFloat(money).toFixed( 2 )+" USD";
+  if (up7 == 1 && money -100 >=0){
+    money-=100;
+    x.innerHTML = parseFloat(money).toFixed( 2 )+" SPACE";
     move(1);
     payloadv7.innerHTML = "Upgrade Success.";
     payloadv7.style.opacity = 1;
@@ -272,9 +272,9 @@ function upgradev7(){
 function upgradev8(){
   var x = document.getElementById("money-bar");
   var payloadv8 = document.querySelector(".p8");
-  if (up8 == 1 && money -2500 >=0){
-    money-=2500;
-    x.innerHTML = parseFloat(money).toFixed( 2 )+" USD";
+  if (up8 == 1 && money -100 >=0){
+    money-=100;
+    x.innerHTML = parseFloat(money).toFixed( 2 )+" SPACE";
     move(1);
     payloadv8.innerHTML = "Upgrade Success.";
     payloadv8.style.opacity = 1;
@@ -286,9 +286,9 @@ function upgradev8(){
 function upgradev10(){
   var x = document.getElementById("money-bar");
   var payloadv10 = document.querySelector(".p10");
-  if (up10 == 1 && money -2500 >=0){
-    money-=2500;
-    x.innerHTML = parseFloat(money).toFixed( 2 )+" USD";
+  if (up10 == 1 && money -100 >=0){
+    money-=100;
+    x.innerHTML = parseFloat(money).toFixed( 2 )+" SPACE";
     move(1);
     payloadv10.innerHTML = "Upgrade Success.";
     payloadv10.style.opacity = 1;
@@ -300,9 +300,9 @@ function upgradev10(){
 function upgradev11(){
   var x = document.getElementById("money-bar");
   var payloadv11 = document.querySelector(".p11");
-  if (up11 == 1 && money -2500 >=0){
-    money-=2500;
-    x.innerHTML = parseFloat(money).toFixed( 2 )+" USD";
+  if (up11 == 1 && money -100 >=0){
+    money-=100;
+    x.innerHTML = parseFloat(money).toFixed( 2 )+" SPACE";
     move(1);
     payloadv11.innerHTML = "Upgrade Success.";
     payloadv11.style.opacity = 1;
@@ -314,9 +314,9 @@ function upgradev11(){
 function upgradev12(){
   var x = document.getElementById("money-bar");
   var payloadv12 = document.querySelector(".p12");
-  if (up12 == 1 && money -2500 >=0){
-    money-=2500;
-    x.innerHTML = parseFloat(money).toFixed( 2 )+" USD";
+  if (up12 == 1 && money -100 >=0){
+    money-=100;
+    x.innerHTML = parseFloat(money).toFixed( 2 )+" SPACE";
     move(1);
     payloadv12.innerHTML = "Upgrade Success.";
     payloadv12.style.opacity = 1;
@@ -433,57 +433,56 @@ function ani() {
     countkm =1; 
     countmk =0;
   }
-
-  
 }
 function plusmoney(){
   var x = document.getElementById("money-bar");
   var y = document.getElementById("chart");
-  if(countweek == 5 && percent <= 30){
-    money+=3000;
-    x.innerHTML = parseFloat(money).toFixed( 2 )+" USD";
-    y.innerHTML = "SpaceTH.co ให้ทุนสนับสนุน";
+  if(countweek == 5){
+    money+=200;
+    x.innerHTML = parseFloat(money).toFixed( 2 )+" SPACE";
+    y.innerHTML = "SpaceTH.co ให้ทุนสนับสนุน +200 SPACE ";
     y.style.animation="ani2 5s";
   }
-  else if(countweek == 4){
-    money+=3000;
-    x.innerHTML = parseFloat(money).toFixed( 2 )+" USD";
-    y.innerHTML = "บางแค ";
+  if(countweek == 4){
+    money+=200;
+    x.innerHTML = parseFloat(money).toFixed( 2 )+" SPACE";
+    y.innerHTML = "Steve Job ฝากพินัยกรรมไว้ให้เงินทุนสนับสนุน +200 SPACE";
     y.style.animation="ani3 5s";
   }
   if(countweek == 3){
-    money+=3000;
-    x.innerHTML = parseFloat(money).toFixed( 2 )+" USD";
-    y.innerHTML = "ม้า ";
+    money+=150;
+    x.innerHTML = parseFloat(money).toFixed( 2 )+" SPACE";
+    y.innerHTML = "พี่เอ้ให้เงินสนับสนุนไปสร้าง ไวนิลบนดวงจันทร์ +150 SPACE";
     y.style.animation="ani4 5s";
   }
   if(countweek == 2 && percent < 50){
-    if(money - 3000 <= 0){
+    if(money - 200 <= 0){
       money = 0;
-      x.innerHTML = parseFloat(money).toFixed( 2 )+" USD";
+      x.innerHTML = parseFloat(money).toFixed( 2 )+" SPACE";
     }
-    else {money-=3000; 
-      x.innerHTML = parseFloat(money).toFixed( 2 )+" USD";
-      y.innerHTML = "ความคืบหน้าต่ำ Sponsor ขอถอนเงินลงทุน "; 
+    else {
+      money-=200; 
+      x.innerHTML = parseFloat(money).toFixed( 2 )+" SPACE";
+      y.innerHTML = "ความคืบหน้าต่ำ Sponsor ขอถอนเงินลงทุน -200 SPACE"; 
       y.style.animation="ani5 5s";
     }
   }
   if(countweek == 1){
-    money+=3000; 
-    x.innerHTML = parseFloat(money).toFixed( 2 )+" USD";
-    y.innerHTML = "อาจารโช ";
+    money+=50; 
+    x.innerHTML = parseFloat(money).toFixed( 2 )+" SPACE";
+    y.innerHTML = "ถูกหวย 2ตัวบนหลังจากถูกกินมานานได้เงินสนับสนุน +50 SPACE";
     y.style.animation="ani6 5s";
   }
   if(countweek == 0){
-    money+=3000; 
-    x.innerHTML = parseFloat(money).toFixed( 2 )+" USD";
-    y.innerHTML = "ken muraki";
+    money+=100; 
+    x.innerHTML = parseFloat(money).toFixed( 2 )+" SPACE";
+    y.innerHTML = "ชาวดาวนาเม็กบินมา ได้ของไปขายและได้เงินสนับสนุน +100 SPACE";
     y.style.animation="ani7 5s";
   }
   if(countweek == -1){
-    money+=1000; 
-    x.innerHTML = parseFloat(money).toFixed( 2 )+" USD";
-    y.innerHTML = "ได้รับเงินเพื่อ ปล่อยจรวด";
+    money+=100; 
+    x.innerHTML = parseFloat(money).toFixed( 2 )+" SPACE";
+    y.innerHTML = "ได้รับเงินจาก NASA ได้รับเงินสนับสนุน +100 SPACE";
     y.style.animation="ani8 5s";
   }
 }
@@ -574,7 +573,7 @@ function unlock(){
 function cheat(){
   var x = document.getElementById("money-bar");
   money=999999999;
-  x.innerHTML = parseFloat(money).toFixed()+" USD";
+  x.innerHTML = parseFloat(money).toFixed()+" SPACE";
   percent=100;
   move(10);
   showspace = 1;
