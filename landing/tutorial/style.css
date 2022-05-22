@@ -1,0 +1,94 @@
+html{
+  height: 100%;
+  width: 100%;
+}
+
+body{
+  background-color:#000;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-image: url("https://media.discordapp.net/attachments/956172623711186974/967418168773574687/Untitled_Artwork.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position:fixed;
+  background: cover;
+}
+div{
+  position: relative;
+}
+/* Header Zone */
+ul.header {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #000;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  
+}
+
+li.header {
+  font-family: 'Press Start 2P', cursive;
+  float: right;
+}
+
+li.header#left {
+  float: left;
+}
+
+li.header a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 0px;
+  text-decoration: none;
+  width: 160px;
+}
+
+li.header a:hover {
+  color: #ff0;
+}
+
+li.header a:active {
+  color: #0f0;
+}
+
+/* tutorial */
+
+.tutorial1{
+  background-color: transparent;
+  border: none;
+  -webkit-text-stroke: 2px black;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  font-family: 'Kanit', sans-serif;
+  padding: 300px 0px;
+  margin:auto 5px;
+  width: 300vh;
+}
+
+ #pic1{
+  position:relative;
+  width:38%;
+  height:auto;
+  top: 145px;
+  left: 100px;
+  background:cover;
+ }
+
+ #pic2{
+  position:relative;
+  width:38%;
+  height:auto;
+  top: 545px;
+  left: 100px;
+  background:cover;
+ }
