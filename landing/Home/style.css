@@ -145,3 +145,10 @@ li.header a:active {
   75% {transform:translateY(50px)}
   100% {transform:translateY(0px)}
 }
+
+.footer {
+  height:10vh;
+  margin-top: 100vh;
+  background: black;
+  color:white;
+}
