@@ -477,3 +477,22 @@ p{
 #over:hover{
   color: black;
 }
+
+#tutorial{
+  position: fixed;
+  width: 200px;
+  height: 25px;
+  right:2%;
+  bottom:15%;
+  border-radius:10px;
+  cursor:pointer;
+  z-index: 1;
+  transition: transform .3s;
+  background: #DDD4FA;
+  border:black solid 2px;
+  text-align:center;
+}
+#tutorial:hover{
+  transform:scale(1.2);
+  background: #5fff00;
+}
