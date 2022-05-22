@@ -1,0 +1,147 @@
+html{
+  height: 100%;
+  width: 100%;
+}
+
+body{
+  background-color:#000;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-image: url("https://media.discordapp.net/attachments/956172623711186974/967418168773574687/Untitled_Artwork.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Header Zone */
+ul.header {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #000;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  
+}
+
+li.header {
+  font-family: 'Press Start 2P', cursive;
+  float: right;
+}
+
+li.header#left {
+  float: left;
+}
+
+li.header a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 0px;
+  text-decoration: none;
+  width: 150px;
+}
+
+li.header a:hover {
+  color: #ff0;
+}
+
+li.header a:active {
+  color: #0f0;
+}
+
+/*Body Home*/
+#main {
+  margin: auto;
+  width: 80%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  object-fit:fill;
+}
+
+.pic {
+  margin:20vh auto;
+  justify-content: center;
+  width: 35%;
+  height: 100%;
+  text-align: center;
+  animation: 8s rocket infinite;
+}
+
+.home {
+  margin:20vh auto;
+  justify-content: center;
+  width: 65%;
+  height: 100%;
+  text-align:center;
+  line-height: 0;
+}
+
+#headeng{
+  -webkit-text-stroke: 2px black;
+  color:white;
+  font-family: 'Press Start 2P', cursive;
+  font-size:450%;
+}
+
+#bodyeng{
+  -webkit-text-stroke: 2px black;
+  color:white;
+  font-family: 'Press Start 2P', cursive;
+  font-size:200%;
+}
+
+#headthai{
+  -webkit-text-stroke: 2px black;
+  color:white;
+  font-family: 'Kanit', sans-serif;
+  font-size:450%;
+}
+
+#bodythai{
+  -webkit-text-stroke: 2px black;
+  color:white;
+  font-family: 'Kanit', sans-serif;
+  font-size:200%;
+}
+
+.buttondiv{
+  margin:10px;
+}
+
+#homebutton{
+  background-color: transparent;
+  border: none;
+  -webkit-text-stroke: 2px black;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  font-family: 'Kanit', sans-serif;
+  padding: 15px 0px;
+  margin:auto 0px;
+  width: 25vh;
+  cursor:pointer;
+}
+
+#homebutton:hover {
+  color: #ff0;
+}
+
+#homebutton:active {
+  color: #0f0;
+}
+
+@keyframes rocket{
+  0% {transform:translateY(0px)}
+  25% {transform:translateY(-50px)}
+  50% {transform:translateY(0px)}
+  75% {transform:translateY(50px)}
+  100% {transform:translateY(0px)}
+}
