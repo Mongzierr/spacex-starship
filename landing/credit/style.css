@@ -1,30 +1,13 @@
-html{
+nimehtml, body {
   height: 100%;
   width: 100%;
 }
-body{
-  background:black;
+li.header#spc {
+  float: left;
+  width:40px;
+  height:40px;
+  margin-top:10px;
 }
-        font-family:sans-serif;
-      .main_pic{
-        top:0%;
-        z-index:-1;
-        width:100%;
-        left:0%;
-        position:fixed;
-        background: cover;
-        
-      }
-      .main{
-        padding:2em;
-        font-family: 'Itim', cursive;
-        max-width:80%;
-        margin:auto;
-        bottom:50%;
-        margin-top:1em;
-        border-radius:5px;
-
-      }
 /* Header Zone */
 ul.header {
   list-style-type: none;
@@ -36,6 +19,7 @@ ul.header {
   width: 100%;
   top: 0;
   left: 0;
+  z-index:1;
   
 }
 
@@ -46,6 +30,8 @@ li.header {
 
 li.header#left {
   float: left;
+  width:50px;
+  height:50px;
 }
 
 li.header a {
@@ -64,52 +50,219 @@ li.header a:hover {
 li.header a:active {
   color: #0f0;
 }
-.head{
-  position:absolute;
-  top: 30%;
-  left: 20%;
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Press Start 2P', cursive;
+    font-weight: normal;
+    font-style: normal;
 }
-      .white_space_large{
-        height:8%;
-      }
-      .white_space_small{
-        background-color:grey;
-        height:0.1%;
-      }
 
-      
-      .pic {
-        margin-left:60%;
-        margin-top:-25%;
-        width: 25%;
-        height: 35%;
-        z-index: 0.5;
-        border-radius:20px;
-        position:absolute;
-        animation:edok 1.5s infinite alternate;
-        
-      }
+.sppm:after{
+  display: flex;
+  color:#FFF;
+  justify-content: center;
+  font-size: 3.5rem;
+  margin-top:2rem;
+  content: "SVATALFHEIM'S MEMBER";
+  animation:mymove 1s infinite alternate;
+}
 
-      
-      p{
-        line-height:2em;
-        color:white;
-        z-index: 1;
-      }
-h1{
-  color:white;
+body {
+    background:black;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+#image {
+  position: fixed;
+  z-index: -1;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1524px;
+    margin: 0 auto;
+}
+
+.card-container {
+    height: 581px;
+    width: 350px;
+    transform: scale(.71);
+    perspective: 1000px;
+    position: relative;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    transition: all .7s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+
+}
+
+.face {
+    position: absolute;
+    width: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.font {
+    background: #0004;
+    border-radius: 30px;
+    transform: rotateY(180deg);
+}
+
+/* .back{
+    transform: rotateY(180deg);
+} */
+
+.card:hover {
+    transform: rotateY(180deg);
+
+}
+
+.in-font {
+    /* padding: 2rem; */
+    height: 100%;
+    position: relative;
+    background-image: url("https://cdn.discordapp.com/attachments/944138097749274656/977525202890137620/183ccd0a26b0b5fde131e52667e3653a.jpg");
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.box {
+    padding: 2rem;
+}
+
+.birthday {
+    margin-bottom: 10px;
+}
+
+.birthday, .id {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+}
+
+.birthday i, .tags i {
+    margin-right: 10px;
+    font-size: 22px;
+    color: white;
+}
+
+.id i {
+    font-size: 25px;
+    color: white;
+    margin-right: 11px;
+}
+
+  
+
+.name {
+    margin-top: 30px;
+    color: white;
+    font-size: 22px;
+}
+
+.nickname {
+    color: white;
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.description {
+    margin-top: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 15px;
+    height: 150px;
+    font-size: 25px;
+}
+
+.description p {
+    font-family: 'Chakra Petch', sans-serif;
+    color: white;
+}
+
+.tags {
+    margin-top: 10px;
+    margin-bottom: 90px;
+    
+}
+
+.tags a {
+    margin-bottom: 40px;
+    border-radius: 10px;
+    border: 3px solid #28242f;
+    padding: 4px;
+    color: hsl(240, 7%, 51%);
+}
+
+.mb {
+    margin-bottom: 25px;
+}
+
+.tags a:hover {
+    border-color: white;
+}
+
+.top {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+html {
+    min-height: 100%;
+}
+
+      pim{
+    position: absolute;
+    right: 40%;
+    top: -80px;
+}
+
+.mcp{
+    position: absolute;
+    right: 38%;
+    top: -75px;
+    font-size: 45px;
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+}
+.bottom{
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    background-image: url('https://media.discordapp.net/attachments/944138097749274656/977793802838364211/Space-Background-Image-2.jpg?');
+    bottom: 0;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Headland One', serif;
+    font-weight: 600;
+    font-size: 24px;
 } 
-h2{
-  color:white;
-}
-
-  .jarhod{
-    width:35%;
-    height:70%;
-    position:relative;
-    left:60%;
-    animation:move 5s  infinite alternate ;
-  }
 #footer{
         background:black;
         padding:2em 1 3em;
@@ -127,7 +280,6 @@ h2{
   float: left;
   width: 33.33%;
   padding: 5px;
-  margin-left: -5%;
 }
 .row::after {
   content: "";
@@ -137,10 +289,21 @@ h2{
 .text-footer {
   font-family: 'Arial';
 }
+
+@keyframes mymove{
+  from {
+    transform:scale 1;
+  }
+  to {
+    transform:scale 1.5; 
+  }
+}
+
 #foot{
   width:100%;
-  height:150px;
+  height:170px;
   display:flex;
+  background-color:gray;
   color:white;
   font-size:40px;
   justify-content: center;
@@ -150,43 +313,12 @@ h2{
 }
 #foot p{
   position:absolute;
-  left:30%;
+  left:15%;
 }
 #it19{
   position:absolute;
   width:6%;
   height:11%;
-  right:30%;
+  right:3%;
   background:cover;
-}
-
-@keyframes move{
-  0% {transform: rotate(0deg);}
-  30% {transform: rotate(-90deg);}
-  100% {transform:translateX(-1000px);}
-}
-
-@keyframes edok{
-  from {transform:scale(1);}
-  to {transform:scale(1.1);}
-}
-
-#ship{
-  width:35%;
-  height:70%;
-  position:absolute;
-  left:60%;
-  top:2550px;
-  perspective:1000px;
-}
-#sship, #ssship{
-  width:50%;
-}
-#shap{
-  width:50%;
-  height:50%;
-  position:absolute;
-  left:50%;
-  top:3700px;
-  perspective:1000px;
 }
