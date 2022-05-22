@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html> 
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+</head>
+<body>
+  <script type="text/javascript" src="script.js"></script>
+  <div id = "chart">
+    No Sponsorship for now.
+  </div>
+  <div id = "ken" data-day="-1">
+    <div class="line">
+      <div id = "money-bar">100000.00 USD</div>
+      <div id="myProgress">
+        <div id="myBar">10%</div>
+      </div>
+  </div>
+  <div id="button">
+    <div id="researchbutton" onclick="openresearch()">
+      <b>research!</b></div>
+    <div id="upgradebutton" onclick="openupgrade()">
+      <b>upgrade</b></div>
+    <div id="marketbutton" onclick="openmarket()">
+      <b>market</b></div>
+  </div>
+  <img id="rep" src="https://cdn.discordapp.com/attachments/880831085431390301/971459733288542278/279199654_401025438303422_1723373248062906846_n-removebg-preview.png" onclick="showbutton()">
+  <div class="time-left"><b>Time Left:</b>
+    <div class= "time">
+      <h2 id="week">8 week</h2>
+      <button id="cheat" style="display:none;" onclick="cheat()">ลองกดดูสิ!</button>
+      <button id="over" style="display:none;" onclick="over()">OverLimitor!</button>
+    </div>
+  </div>
+  <div id="status" onclick="ani()"><br>Go!
+  </div>
+  <div class="box"><p id="text">จรวดไปตกอยู่พัทยา</p>
+    <a href="https://multimedia-svartafheim.siwanartworasak.repl.co/" class="button">Web landing</a> <br><br><br><br><br> <img id="gif" src="">
+  </div>
+  <img id="build1" src="https://media.discordapp.net/attachments/874227254757031956/971369202881544202/build1-removebg-preview.png" alt="">
+  <img id="build2" src="https://cdn.discordapp.com/attachments/874227254757031956/971373534788071444/build3.png" alt="">
+  <img id="build3" src="https://cdn.discordapp.com/attachments/874227254757031956/971366429691625472/build5.png" alt="">
+  <img id="build4" src="https://cdn.discordapp.com/attachments/874227254757031956/971366513653219368/build4-removebg-preview.png" alt="">
+  <img id="build5" src="https://cdn.discordapp.com/attachments/874227254757031956/971366514219417640/build2-removebg-preview.png" alt="">
+  <img id="spacex" src="https://cdn.discordapp.com/attachments/956179267308371978/961567061119742012/lvl1_starship.png" style="width:330px;, height:330px;">
+  <img id="spacexv2" src="https://cdn.discordapp.com/attachments/956179267308371978/961567061497233418/lvl2_starship.png" style="width:330px;, height:330px;">
+  <img id="spacexv3" src="https://cdn.discordapp.com/attachments/956179267308371978/961567061761478656/lvl3_starship.png" style="width:330px;, height:330px;">
+  <img id="spacexv4" src="https://cdn.discordapp.com/attachments/956179267308371978/961567062017335336/lvl4_starship.png" style="width:330px;, height:330px;">
+  <div id="research">
+    <span class="close" onclick="closeresearch()">&times;</span>
+    <h2 id="quiz1">Elon Musk ก่อตั้ง SpaceX มาในปี 2002 ใช่หรือไม่</h2>
+    <button id="keaw1" onclick="quiz1t()">True</button>
+    <button id="dang1" onclick="quiz1f()">False</button>
+  </div>
+  <div id="research2">
+    <span class="close" onclick="closeresearch()">&times;</span>
+    <h2 id="quiz2">SN15 มีตัวเครื่องยนต์ Raptor ถึง 5 ตัวใช่หรือไม่</h2>
+    <button id="keaw2" onclick="quiz2f()">True</button>
+    <button id="dang2" onclick="quiz2t()">False</button>
+  </div>
+  <div id="research3">
+    <span class="close" onclick="closeresearch()">&times;</span>
+    <h2 id="quiz3">จากข้อมูลเรารู้ได้ว่าในการที่จะสร้างจรวดครั้งแรก Elon musk มีความตั้งใจที่จะซื้อจรวดขีปนาวุธจากรัสเซียมาดัดแปลง แต่รัสเซียได้เสนอราคาจรวดในราคาที่ Elon muskรับได้ ใช่หรือไม่</h2>
+    <button id="keaw3" onclick="quiz3f()">True</button>
+    <button id="dang3" onclick="quiz3t()">False</button>
+  </div>
+  <div id="market">
+    <span class="close" onclick="closemarket()">&times;</span>
+    <div class="boxw">Click to buy!</div>
+    <div class="mar-page">
+      <div class="card m1" onclick="buy(mm1), show()"> <img src="https://cdn.discordapp.com/attachments/956179267308371978/961567061119742012/lvl1_starship.png" style="width:100px;, height:100px;"><p>30000 USD</p></div>
+      <div class="card m2" onclick="buy(mm2)"> <img src="https://cdn.discordapp.com/attachments/956179267308371978/968187698374402128/fuel1.png" style="width:100px;, height:100px;" style="width:100px;, height:100px;"><p>30000 USD</p></div>
+      <div class="card m3" onclick="buy(mm3)"> <img src="https://cdn.discordapp.com/attachments/956179267308371978/967810472369848360/unknown.png" style="width:100px;, height:100px;"><p>30000 USD</p></div>
+      <div class="card m4" onclick="buy(mm4)"> <img src="https://cdn.discordapp.com/attachments/956172623711186974/965888155792318504/pixil-frame-0_3.png" style="width:100px;, height:100px;"><p>30000 USD</p></div>
+    </div>
+  </div>
+  <div id="upgrade">
+    <span class="close" onclick= "closeupgrade()">&times;</span>
+    <div class= "boxx">Click to upgrade.
+      <div class="up-page">
+        <div class="card1 p1"> <img src="https://cdn.discordapp.com/attachments/956179267308371978/967810472369848360/unknown.png" style="width:100px;, height:100px;"></div>
+        <div class="cardpage p2" onclick="upgradev2()"> <img src="https://cdn.discordapp.com/attachments/956179267308371978/967810919340052530/unknown.png" style="width:100px;, height:100px;"><p>30000 USD</p></div>
+        <div class="cardpage p3" onclick="upgradev3()"> <img src="https://cdn.discordapp.com/attachments/956179267308371978/967810700804227172/unknown.png" style="width:100px;, height:100px;"><p>30000 USD</p></div>
+        <div class="cardpage p4" onclick="upgradev4()"> <img src="https://cdn.discordapp.com/attachments/956179267308371978/967810745951727696/unknown.png" style="width:100px;, height:100px;"><p>30000 USD</p></div>
+        <div class="card2 p5"> <img src="https://cdn.discordapp.com/attachments/956179267308371978/968187698374402128/fuel1.png" style="width:100px;, height:100px;"></div>
+        <div class="cardpage p6" onclick="upgradev6()"> <img src="https://cdn.discordapp.com/attachments/956179267308371978/968187698647023677/fuel2.png" style="width:100px;, height:100px;"><p>30000 USD</p></div>
+        <div class="cardpage p7" onclick="upgradev7()"> <img src="https://cdn.discordapp.com/attachments/956179267308371978/968187698982584360/fuel3.png" style="width:100px;, height:100px;"><p>30000 USD</p></div>
+        <div class="cardpage p8" onclick="upgradev8()"> <img src="https://cdn.discordapp.com/attachments/956179267308371978/968187810739810314/unknown.png" style="width:100px;, height:100px;"><p>30000 USD</p></div>
+
+        <div class="card3 p9"> <img src="https://cdn.discordapp.com/attachments/956172623711186974/965888155792318504/pixil-frame-0_3.png" style="width:100px;, height:100px;"></div>
+        <div class="cardpage p10" onclick="upgradev10()"> <img src="https://cdn.discordapp.com/attachments/956172623711186974/965888155133808670/pixil-frame-0_4.png" style="width:100px;, height:100px;"><p>30000 USD</p></div>
+        <div class="cardpage p11" onclick="upgradev11()"> <img src="https://cdn.discordapp.com/attachments/956172623711186974/965888155515486218/Untitled_Artwork_1.png" style="width:100px;, height:100px;"><p>30000 USD</p></div>
+        <div class="cardpage p12" onclick="upgradev12()"> <img src="https://cdn.discordapp.com/attachments/956172623711186974/965888155318370354/pixil-frame-0_5.png" style="width:100px;, height:100px;"><p>30000 USD</p></div>
+        
+      </div>
+    </div>
+  </div>
+</body>
+</html>
