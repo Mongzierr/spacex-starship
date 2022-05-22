@@ -3,7 +3,10 @@ html{
   width: 100%;
 }
 body{
-  background:black;
+  height: 100%;
+  width: 100%;
+  background: #000;
+  margin: 0;
 }
         font-family:sans-serif;
       .main_pic{
@@ -36,7 +39,7 @@ ul.header {
   width: 100%;
   top: 0;
   left: 0;
-  
+  z-index: 1;
 }
 
 li.header {
@@ -189,4 +192,48 @@ h2{
   left:50%;
   top:3700px;
   perspective:1000px;
+}
+
+.footer {
+  position:absolust;
+  height:30vh;
+  width: 100%;
+  background: black;
+  color:white;
+}
+
+#ftop{
+  height:70%;
+  width:100%;
+  margin: auto;
+  text-align:center;
+}
+#fbuttom{
+  buttom: 0;
+  margin: auto;
+  height: 30%;
+}
+#pbuttom{
+  margin: auto;
+  font-family: 'Kanit', sans-serif;
+  text-align: center;
+}
+#ptext{
+  margin: auto;
+  font-family: 'Kanit', sans-serif;
+  text-align: left;
+  font-size:20px;
+}
+#fleft{
+  word-spacing: 120px;
+  padding-top: 10px;
+  float: left;
+  width:70%;
+  margin: auto;
+}
+#fright{
+  padding-top: 35px;
+  float: right;
+  width:30%;
+  margin: auto;
 }
