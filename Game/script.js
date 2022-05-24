@@ -108,17 +108,6 @@ function closeresearch() {
   z.style.display = "none";
 }
 
-function showbutton() {
-  var x = document.getElementById("button");
-  var y = document.getElementById("rep");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } 
-  else {
-    x.style.display = "none";
-  }
-}
-
 function closemarket() {
   var x = document.getElementById("market");
   x.style.display = "none";
@@ -159,6 +148,7 @@ function buy(piece){
     y.innerHTML = "Sold Out.";
     y.style.cursor = "auto";
     countmk++;
+    checkbt();
     return mm1 =0;
     
   }
@@ -171,6 +161,7 @@ function buy(piece){
     inside.style.opacity = 1;
     inside.style.cursor = "auto";
     countmk++;
+    checkbt();
     return mm2 =0;
   }
   
@@ -183,6 +174,7 @@ function buy(piece){
     payload.style.opacity = 1;
     payload.style.cursor = "auto";
     countmk++;
+    checkbt();
     return mm3 =0;
   }
 
@@ -195,6 +187,7 @@ function buy(piece){
     ipon.style.opacity = 1;
     ipon.style.cursor = "auto";
     countmk++;
+    checkbt();
     return mm4 =0;
   }
 
@@ -360,22 +353,23 @@ function startTimer(duration, display) {
           }
         }
         if(duration == 0){
-          display.textContent = "Time up!";
+          display.textContent = "Time up";
           move(timeup);
           timeup--;
           countkm=1;
           countmk=-1;
-          chate();
+          document.querySelector("#cheat").style.display = "block";
         }
     }, 1000);
 }
 
+
 window.onload = function () {
   var display = document.querySelector('#week');
-  var tenMinutes = 60 *10;
   var oneMinutes = 20;
   startTimer(oneMinutes, display);
 };
+
 
 function ani() {
   var x = document.getElementById("spacex");
@@ -392,8 +386,7 @@ function ani() {
     j.style.animation = "go 1s 1 forwards linear";
     img.setAttribute('src', 'https://cdn.discordapp.com/attachments/977545208755523625/977588674667626556/V2.gif');
     document.querySelector(".box").style.display = "block";
-    countkm =1;
-    countmk =0;
+    countmk =7;
     timeup--;
   }
   else if (showspace == 1 &&  percent <= 60){
@@ -404,8 +397,7 @@ function ani() {
     document.querySelector("#text").innerHTML = "ยานไปติดอยู่วงโคจรไปต่อไม่ได้";
     img.setAttribute('src', 'https://cdn.discordapp.com/attachments/977545208755523625/977588739993899038/V3.gif');
     document.querySelector(".box").style.display = "block";
-    countkm =1;
-    countmk =0;
+    countmk =7;
     timeup--;
   }
 
@@ -417,8 +409,7 @@ function ani() {
     document.querySelector("#text").innerHTML = "การส่งจรวจประสบความสำเร็จ";
     img.setAttribute('src', 'https://cdn.discordapp.com/attachments/956179267308371978/961240156873039913/Untitled_Artwork.gif');
     document.querySelector(".box").style.display = "block";
-    countkm =1; 
-    countmk =0;
+    countmk =7;
     timeup--;
   }
 
@@ -430,8 +421,7 @@ function ani() {
     document.querySelector("#text").innerHTML = "คุณคือสุดยอดแห่งเกรียน ยินดีด้วยนี่คือ Easter Egg";
     img.setAttribute('src', 'https://i.pinimg.com/originals/91/60/74/916074b3c5a6a5bcdcdd73be43282fa5.gif');
     document.querySelector(".box").style.display = "block";
-    countkm =1; 
-    countmk =0;
+    countmk =7;
   }
 }
 function plusmoney(){
@@ -540,6 +530,7 @@ function quiz3t(){
   countquiz++;
   countmk++;
   unlock();
+  checkbt();
 }
 
 function quiz3f(){
@@ -550,6 +541,7 @@ function quiz3f(){
   y.style.display = "none";
   z.style.display = "none";
   countmk++;
+  checkbt();
 }
 
 function unlock(){
@@ -577,8 +569,9 @@ function cheat(){
   percent=100;
   move(10);
   showspace = 1;
-  move()
   document.querySelector("#over").style.display = "block";
+  countkm =1;
+  checkbt();
 }
 
 function over(){
@@ -589,5 +582,22 @@ function over(){
 function chate(){
   if(timeup == -1){
     document.querySelector("#cheat").style.display = "block";
+  }
+}
+
+function checkbt(){
+  var x = document.getElementById("upgradebutton");
+  var y = document.getElementById("marketbutton")
+  if (countmk == 4){
+    document.getElementById("researchbutton").style.background ="white";
+    x.style.backgroundColor = "white";
+    y.style.backgroundColor = "#c4c4c4";
+    countkm = 1;
+  }
+  if(countmk == 7){
+    document.getElementById("researchbutton").style.background ="#c4c4c4";
+  }
+  if(countkm == 1){
+    y.style.background = "#c4c4c4";
   }
 }
